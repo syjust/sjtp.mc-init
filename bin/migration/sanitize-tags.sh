@@ -8,4 +8,4 @@ for tag in $tags ; do
 	git branch -r -d "$svn_pref/tags/$tag"
 done
 
-git branch -a
+git branch --all -vv

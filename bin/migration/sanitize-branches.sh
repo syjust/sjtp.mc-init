@@ -8,4 +8,4 @@ for branch in $branches ; do
 	git branch -r -d "$svn_pref/$branch"
 done
 
-git branch -a
+git branch --all -vv
