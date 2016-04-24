@@ -3,8 +3,8 @@
 here="`dirname $0`"
 . $here/commons.inc.sh $0
 
-# slide 1
-title "slide 1" \
+# slide 1 - init
+title "slide 1 - init" \
 	&& git init
 cont $?
 
@@ -38,8 +38,8 @@ title "last status" \
 	&& git status --short
 cont $?
 
-# slide 2
-title "slide 2" \
+# slide 2 - 2 commits
+title "slide 2 - 2 commits" \
 	&& echo "foo@mc.com" >> file.txt \
 	&& git add file.txt \
 	&& git commit -m "email here" \
