@@ -1,0 +1,30 @@
+[user]
+	name        = John Doe / localhost
+	email       = john.doe@example.com
+[core]
+	editor      = vim 
+[merge]
+	tool        = vimdiff
+[alias]
+	br          = branch
+	ci          = commit
+	co          = checkout
+	df          = diff
+	dft         = difftool
+	ds          = diff --name-only
+	lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev=8 --abbrev-commit --date=iso
+	lgs         = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --stat
+	log         = log -p
+  merge       = merge --no-commit
+	mgt         = mergetool
+	pop         = stash pop
+	pushup      = push --set-upstream origin master
+	st          = status -s
+	sts         = stash
+[color]
+	branch      = auto
+	diff        = auto
+	status      = auto
+	interactive = auto
+[push]
+	default     = matching

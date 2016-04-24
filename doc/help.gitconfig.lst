@@ -1,0 +1,405 @@
+       advice.pushUpdateRejected
+       advice.pushNonFFCurrent
+       advice.pushNonFFDefault
+       advice.pushNonFFMatching
+       advice.pushAlreadyExists
+       advice.pushFetchFirst
+       advice.pushNeedsForce
+       advice.statusHints
+       advice.statusUoption
+       advice.commitBeforeMerge
+       advice.resolveConflict
+       advice.implicitIdentity
+       advice.detachedHead
+       advice.amWorkDir
+       advice.rmHints
+       core.fileMode
+       core.ignorecase
+       core.precomposeunicode
+       core.trustctime
+       core.checkstat
+       core.quotepath
+       core.eol
+       core.safecrlf
+       core.autocrlf
+       core.symlinks
+       core.gitProxy
+       core.ignoreStat
+       core.preferSymlinkRefs
+       core.bare
+       core.worktree
+       core.logAllRefUpdates
+       core.repositoryFormatVersion
+       core.sharedRepository
+       core.warnAmbiguousRefs
+       core.compression
+       core.loosecompression
+       core.packedGitWindowSize
+       core.packedGitLimit
+       core.deltaBaseCacheLimit
+       core.bigFileThreshold
+       core.excludesfile
+       core.askpass
+       core.attributesfile
+       core.editor
+       core.commentchar
+       core.pager
+       core.whitespace
+       core.fsyncobjectfiles
+       core.preloadindex
+       core.createObject
+       core.notesRef
+       core.sparseCheckout
+       core.abbrev
+       add.ignore-errors, add.ignoreErrors
+       alias.*
+       am.keepcr
+       apply.ignorewhitespace
+       apply.whitespace
+       branch.autosetupmerge
+       branch.autosetuprebase
+       branch.<name>.remote
+       branch.<name>.pushremote
+       branch.<name>.merge
+       branch.<name>.mergeoptions
+       branch.<name>.rebase
+       branch.<name>.description
+       browser.<tool>.cmd
+       browser.<tool>.path
+       clean.requireForce
+       color.branch
+       color.branch.<slot>
+           current
+           local
+           remote
+           upstream
+           plain
+           
+           colors accepted are normal, black, red, green, yellow, blue,
+           magenta, cyan and white; the attributes are bold, dim, ul, blink
+           and reverse.
+
+       color.diff
+       color.diff.<slot>
+           plain
+           meta
+           frag
+           old
+           new
+           commit
+           whitespace
+
+       color.decorate.<slot>
+           branch, remoteBranch, tag, stash or HEAD for local branches,
+           tags, stash and HEAD, for rembte-tracking branches.
+
+       color.grep
+          auto, true, false.
+
+       color.grep.<slot>
+           context
+               non-matching text in context lines (when using -A, -B, or -C)
+           filename
+               filename prefix (when not using -h)
+           function
+               function name lines (when using -p)
+           linenumber
+               line number prefix (when using -n)
+           match
+               matching text
+           selected
+               non-matching text in selected lines
+           separator
+               separators between fields on a line (:, -, and =) and between
+
+       color.interactive
+          always
+          false
+          true, auto
+
+       color.interactive.<slot>
+           prompt, header, help or error,
+
+       color.pager
+          true, false
+
+       color.showbranch
+          true, false
+
+       color.status
+       color.status.<slot>
+           header, added, changed, untracked, branch, nobranch 
+
+       color.ui
+       column.ui
+           always
+               always show in columns
+           never
+               never show in columns
+           auto
+               show in columns if the output is to the terminal
+           column
+               fill columns before rows
+           row
+               fill rows before columns
+           plain
+               show in one column
+           dense
+               make unequal size columns to utilize more space
+           nodense
+               make equal size columns
+
+       column.branch
+       column.clean
+       column.status
+       column.tag
+       commit.cleanup
+       commit.status
+       commit.template
+       credential.helper
+       credential.useHttpPath
+       credential.username
+       credential.<url>.*
+       diff.autorefreshindex
+       diff.dirstat
+           changes
+           lines
+           files
+           cumulative
+           <limit>
+       diff.statGraphWidth
+       diff.context
+       diff.external
+       diff.ignoreSubmodules
+       diff.mnemonicprefix
+       diff.noprefix
+       diff.renameLimit
+       diff.renames
+       diff.suppressBlankEmpty
+       diff.submodule
+       diff.wordRegex
+       diff.<driver>.command
+       diff.<driver>.xfuncname
+       diff.<driver>.binary
+       diff.<driver>.textconv
+       diff.<driver>.wordregex
+       diff.<driver>.cachetextconv
+       diff.tool
+       diff.algorithm
+           default, myers
+           minimal
+           patience
+           histogram
+       difftool.<tool>.path
+       difftool.<tool>.cmd
+       difftool.prompt
+       fetch.recurseSubmodules
+       fetch.fsckObjects
+       fetch.unpackLimit
+       fetch.prune
+       format.attach
+       format.numbered
+       format.headers
+       format.to, format.cc
+       format.subjectprefix
+       format.signature
+       format.suffix
+       format.pretty
+       format.thread
+       format.signoff
+       format.coverLetter
+       filter.<driver>.clean
+       filter.<driver>.smudge
+       gc.aggressiveWindow
+       gc.auto
+       gc.autopacklimit
+       gc.packrefs
+       gc.pruneexpire
+       gc.reflogexpire, gc.<pattern>.reflogexpire
+       gc.reflogexpireunreachable, gc.<ref>.reflogexpireunreachable
+       gc.rerereresolved
+       gc.rerereunresolved
+       gitcvs.commitmsgannotation
+       gitcvs.enabled
+       gitcvs.logfile
+       gitcvs.usecrlfattr
+       gitcvs.allbinary
+       gitcvs.dbname
+       gitcvs.dbdriver
+       gitcvs.dbuser, gitcvs.dbpass
+       gitcvs.dbTableNamePrefix
+       gitweb.category, gitweb.description, gitweb.owner, gitweb.url
+       gitweb.avatar, gitweb.blame, gitweb.grep, gitweb.highlight,
+       gitweb.patches, gitweb.pickaxe, gitweb.remote_heads, gitweb.showsizes,
+       gitweb.snapshot
+       grep.lineNumber
+       grep.patternType
+       grep.extendedRegexp
+       gpg.program
+       gui.commitmsgwidth
+       gui.diffcontext
+       gui.encoding
+       gui.matchtrackingbranch
+       gui.newbranchtemplate
+       gui.pruneduringfetch
+       gui.trustmtime
+       gui.spellingdictionary
+       gui.fastcopyblame
+       gui.copyblamethreshold
+       gui.blamehistoryctx
+       guitool.<name>.cmd
+       guitool.<name>.needsfile
+       guitool.<name>.noconsole
+       guitool.<name>.norescan
+       guitool.<name>.confirm
+       guitool.<name>.argprompt
+       guitool.<name>.revprompt
+       guitool.<name>.revunmerged
+       guitool.<name>.title
+       guitool.<name>.prompt
+       help.browser
+       help.format
+       help.autocorrect
+       help.htmlpath
+       http.proxy
+       http.cookiefile
+       http.savecookies
+       http.sslVerify
+       http.sslCert
+       http.sslKey
+       http.sslCertPasswordProtected
+       http.sslCAInfo
+       http.sslCAPath
+       http.sslTry
+       http.maxRequests
+       http.minSessions
+       http.postBuffer
+       http.lowSpeedLimit, http.lowSpeedTime
+       http.noEPSV
+       http.useragent
+       http.<url>.*
+       i18n.commitEncoding
+       i18n.logOutputEncoding
+       imap
+       init.templatedir
+       instaweb.browser
+       instaweb.httpd
+       instaweb.local
+       instaweb.modulepath
+       instaweb.port
+       interactive.singlekey
+       log.abbrevCommit
+       log.date
+       log.decorate
+       log.showroot
+       log.mailmap
+       mailmap.file
+       mailmap.blob
+       man.viewer
+       man.<tool>.cmd
+       man.<tool>.path
+       merge.conflictstyle
+       merge.defaultToUpstream
+       merge.ff
+       merge.log
+       merge.renameLimit
+       merge.renormalize
+       merge.stat
+       merge.tool
+       merge.verbosity
+       merge.<driver>.name
+       merge.<driver>.driver
+       merge.<driver>.recursive
+       mergetool.<tool>.path
+       mergetool.<tool>.cmd
+       mergetool.<tool>.trustExitCode
+       mergetool.keepBackup
+       mergetool.keepTemporaries
+       mergetool.prompt
+       notes.displayRef
+       notes.rewrite.<command>
+       notes.rewriteMode
+       notes.rewriteRef
+       pack.window
+       pack.depth
+       pack.windowMemory
+       pack.compression
+       pack.deltaCacheSize
+       pack.deltaCacheLimit
+       pack.threads
+       pack.indexVersion
+       pack.packSizeLimit
+       pager.<cmd>
+       pretty.<name>
+       pull.rebase
+       pull.octopus
+       pull.twohead
+       push.default
+       rebase.stat
+       rebase.autosquash
+       rebase.autostash
+       receive.autogc
+       receive.fsckObjects
+       receive.unpackLimit
+       receive.denyDeletes
+       receive.denyDeleteCurrent
+       receive.denyCurrentBranch
+       receive.denyNonFastForwards
+       receive.hiderefs
+       receive.updateserverinfo
+       remote.pushdefault
+       remote.<name>.url
+       remote.<name>.pushurl
+       remote.<name>.proxy
+       remote.<name>.fetch
+       remote.<name>.push
+       remote.<name>.mirror
+       remote.<name>.skipDefaultUpdate
+       remote.<name>.skipFetchAll
+       remote.<name>.receivepack
+       remote.<name>.uploadpack
+       remote.<name>.tagopt
+       remote.<name>.vcs
+       remote.<name>.prune
+       remotes.<group>
+       repack.usedeltabaseoffset
+       rerere.autoupdate
+       rerere.enabled
+       sendemail.identity
+       sendemail.smtpencryption
+       sendemail.smtpssl
+       sendemail.smtpsslcertpath
+       sendemail.<identity>.*
+       sendemail.aliasesfile, sendemail.aliasfiletype, sendemail.annotate,
+       sendemail.bcc, sendemail.cc, sendemail.cccmd, sendemail.chainreplyto,
+       sendemail.confirm, sendemail.envelopesender, sendemail.from,
+       sendemail.multiedit, sendemail.signedoffbycc, sendemail.smtppass,
+       sendemail.suppresscc, sendemail.suppressfrom, sendemail.to,
+       sendemail.smtpdomain, sendemail.smtpserver, sendemail.smtpserverport,
+       sendemail.smtpserveroption, sendemail.smtpuser, sendemail.thread,
+       sendemail.validate
+       sendemail.signedoffcc
+       showbranch.default
+       status.relativePaths
+       status.short
+       status.branch
+       status.displayCommentPrefix
+       status.showUntrackedFiles
+       status.submodulesummary
+       submodule.<name>.path, submodule.<name>.url, submodule.<name>.update
+       submodule.<name>.branch
+       submodule.<name>.fetchRecurseSubmodules
+       submodule.<name>.ignore
+       tar.umask
+       transfer.fsckObjects
+       transfer.hiderefs
+       transfer.unpackLimit
+       uploadpack.hiderefs
+       uploadpack.allowtipsha1inwant
+       uploadpack.keepalive
+       url.<base>.insteadOf
+       url.<base>.pushInsteadOf
+       user.email
+       user.name
+       user.signingkey
+       web.browser

@@ -1,0 +1,47 @@
+[user]
+	name        = John Doe / localhost
+	email       = john.doe@example.com
+[core]
+	editor      = vim 
+[merge]
+	tool        = vimdiff
+[alias]
+	br          = branch
+	bv          = branch --all -vv
+	ci          = commit
+	clon        = clone -u /usr/local/bin/git-upload-pack
+	co          = checkout
+	df          = diff
+	diffshort   = diff --name-only
+	dft         = difftool
+	ds          = diff --name-only
+	fet         = fetch --upload-pack /usr/local/bin/git-upload-pack
+	lg          = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev=8 --abbrev-commit --date=iso
+	lga         = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev=8 --abbrev-commit --date=iso --all
+	lgl         = log --graph --pretty=format:'%H'
+	lgp         = log --graph --pretty=format:'%h -%d %s (%cr) <%an>' --abbrev=8 --abbrev-commit --date=iso
+	lgs         = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --stat
+	log         = log -p
+  log-sha-only= log --graph --pretty=format:'%H'
+	logstat     = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --stat
+	merge       = merge --no-commit
+	mgt         = mergetool -y
+	pop					= stash pop
+	pushup      = push --set-upstream origin master
+	pul         = pull --upload-pack /usr/local/bin/git-upload-pack
+	pull        = pull --no-commit
+	pus         = push --receive-pack /usr/local/bin/git-receive-pack
+	push1       = push --set-upstream origin master
+	sh          = show --pretty=oneline --abbrev-commit
+	shone       = log --pretty=oneline --abbrev-commit -1
+	st          = status --branch --short
+	stash				= stash --include-untracked
+[color]
+	branch      = auto
+	diff        = auto
+	status      = auto
+	interactive = auto
+[push]
+	default     = matching
+[web]
+	browser = chrome
