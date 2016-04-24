@@ -1,5 +1,5 @@
 #!/bin/bash
-here="`diarnme $0`"
+here="`dirname $0`"
 file="$here/../doc/help.gitconfig.lst"
 
 function display() {
