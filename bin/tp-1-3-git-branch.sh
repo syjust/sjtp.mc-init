@@ -30,7 +30,7 @@ cont $?
 
 # reset master and rename branch to iss53
 title "reset master and rename branch to iss53" \
-	&& git reset HEAD^ \
+	&& git reset --hard HEAD^ \
 	&& git branch -m testing iss53
 cont $?
 
@@ -59,22 +59,37 @@ title "new modif on branch iss53" \
 	&& git commit -am "mail > titi on iss53"
 cont $?
 
-# return on mater and prepare merge
-title "return on mater and prepare merge" \
+# return on master and prepare merge
+title "return on master and prepare merge" \
 	&& git checkout master \
 	&& git lg --all
 cont $?
 
 # merging iss53 on master (with conflict)
 title "merging iss53 on master (with conflict)" \
-	&& git merge iss53
-git status --short
+	&& git merge iss53 \
+	|| [ $? -ne 0 ]
+cont $?
+
+# status after contlict
+title "status after contlict" \
+	&& git status --short
+cont $?
 
 # use mergetool to resolve conflict after merge
 title "use mergetool to resolve conflict and commit" \
-	&& git mergetool \
+	&& git mergetool
+cont $?
+
+# status after mergetool
+title "status after mergetool" \
 	&& git status --short \
-	&& git lg
+	&& git lg --all
+cont $?
+
+# commiting merge conflict resolution
+title "commiting merge conflict resolution" \
+	&& git commit
 cont $?
 
 # reseting master to c4
@@ -86,7 +101,9 @@ cont $?
 # rebasing iss53 on master
 title "rebasing iss53 on master" \
 	&& git checkout iss53 \
-	&& git rebase master
+	&& git rebase master \
+	|| [ $? -ne 0 ]
+cont $?
 
 # use mergetool to resolve conflict after rebase
 title "use mergetool to resolve conflict after rebase" \

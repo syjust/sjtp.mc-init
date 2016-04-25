@@ -21,10 +21,11 @@ function cont() {
 			quit "error found here ($mess)"
 		else
 			if [ -z "$mess" ] ; then
-				echo -n "press enter to continue..." && read
+				echo -n "press enter to continue..."
 			else
-				echo -n "press enter to continue with '$1'..." && read
+				echo -n "press enter to continue with '$1'..."
 			fi
+			[ "x$TITLE" == "xyes-all" ] || read
 		fi
 	fi
 	return $code
@@ -34,9 +35,9 @@ function title() {
 	local ret=0
 	echo
 	echo "# --------------------"
-	if [ "x$TITLE" != "xnone" ] && [ "x$TITLE" == "xall" -o "x$TITLE" == "x$1" ] ; then
+	if [ "x$TITLE" != "xnone" ] && [ "x$TITLE" == "xall" -o "x$TITLE" == "x$1" -o "x$TITLE" == "xyes-all" ] ; then
 		echo "# $1"
-		TITLE="all"
+		[ "x$TITLE" == "xyes-all" ] || TITLE="all"
 		SKIP=0
 	else
 		ret=1
@@ -52,7 +53,7 @@ if [ ! -z "$1" ] ; then
 		echo "From Where to Start ?"
 		ifs=$IFS
 		IFS=$'\n'
-		select TITLE in all ` cat <(grep -E "^title" $1 | awk -F\" '{print $2}')` none ; do
+		select TITLE in all ` cat <(grep -E "^title" $1 | awk -F\" '{print $2}')` yes-all none ; do
 			break
 		done
 		IFS=$ifs
